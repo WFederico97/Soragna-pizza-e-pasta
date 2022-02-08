@@ -1,0 +1,936 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Caveat:wght@400;500;600;700&family=Mukta:wght@200;300;600&display=swap');
+* {
+  margin: 0;
+  padding: 0;
+}
+
+#encabezado {
+  background-color: #ffeedb;
+  display: flex;
+  justify-content: space-evenly;
+  font-family: 'Anton', sans-serif;
+  font-size: 13px;
+  padding: auto;
+}
+
+.tituloppal {
+  justify-self: center;
+  color: #0a1d37;
+  justify-self: center;
+  text-align: center;
+  padding: 1em;
+}
+.logo-home {
+  height: 120px;
+  width: 120px;
+  align-self: center;
+  justify-self: center;
+  border-radius: 50px;
+}
+
+.encabezadoBarraNav {
+  display: flex;
+}
+
+.navbar {
+  display: flex;
+  margin: 1em 1em 1em 1em;
+  overflow: visible;
+}
+
+.paginas {
+  display: flex;
+  list-style-type: none;
+  align-items: center;
+  gap: 2rem;
+}
+
+footer {
+  background-color: #ffeedb;
+  border: 7px solid #000000;
+  font-family: 'Anton', sans-serif;
+  font-size: 15px;
+  background-image: url(assets/images/mantelVectorizado.jpg);
+  background-size: cover;
+  color: #0a1d37;
+}
+
+.footernav {
+  display: flex;
+  margin: 8px 15px 8px 15px;
+}
+
+.footerpages {
+  display: flex;
+  list-style-type: none;
+  gap: 1rem;
+}
+
+.mainIndex {
+  background: #ffd8cc;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 1fr auto auto;
+  grid-template-areas:
+    'header' 
+    ' parrafo'
+    'video'
+    'playlist';
+  font-family: 'Anton', sans-serif;
+  font-size: 20px;
+  text-indent: 15px;
+  text-shadow: 2px 3px 5px;
+  color: #0a1d37;
+  padding: 2em;
+}
+
+.indexGridHeader {
+  grid-area: header;
+  align-self: center;
+  justify-self: center;
+}
+.indexGridParrafo {
+  grid-area: parrafo;
+}
+.indexGridVideo {
+  grid-area: video;
+
+}
+.indexGridPlaylist {
+  grid-area: playlist;
+  justify-self: flex-end;
+  align-self: center;
+}
+
+/* sección carta*/
+
+
+.gridCarta {
+  background-color: #ffd8cc;
+  display: grid;
+  grid-template-columns: 3fr 3fr 3fr;
+  grid-template-rows: auto auto auto ;
+  grid-template-areas: "header header header"
+    "content1 content2 content3";
+  font-family: 'Anton', sans-serif;
+  font-size: 20px;
+  text-indent: 15px;
+  text-shadow: 2px 3px 5px;
+  color: #0a1d37;
+  padding: 2em;
+  align-self: center;
+  justify-self: center;
+}
+.headerCarta {
+  grid-area: header;
+}
+.pizzas {
+  height: 24em;
+}
+.contenidoCartaPizza {
+  grid-area: content1;
+}
+.contenidoCartaPasta {
+  grid-area: content2;
+}
+.pastas {
+  height: 24em;
+}
+.contenidoCartaVino {
+  grid-area: content3;
+}
+.vinos {
+  height: 24em;
+}
+
+/*Salon*/
+
+.nuestroSalon {
+  display: grid;
+  grid-column-gap: 3em;
+  grid-template-columns: auto auto;
+  grid-template-areas:
+    'nuestroSalonFoto1 nuestroSalonParrafo1'
+    'nuestroSalonParrafo2 nuestroSalonFoto2'
+    'nuestroSalonFoto3 nuestroSalonParrafo3';
+  background: #ffd8cc;
+}
+
+.nuestroSalon div p {
+  display: flex;
+  align-items: center;
+  height: 100%;
+  width: 600px;
+  padding: 2em;
+}
+
+.nuestroSalon p {
+  white-space: pre;
+  text-shadow: 2px 3px 5px;
+  font-size: 20px;
+  color: #0a1d37;
+  font-family: 'Anton', sans-serif;
+}
+
+.nuestroSalonFoto1 {
+  grid-area: nuestroSalonFoto1;
+}
+
+.salon1 {
+  height: 100%;
+  width: 400px;
+}
+
+.nuestroSalonParrafo1 {
+  grid-area: nuestroSalonParrafo1;
+}
+
+.nuestroSalonParrafo2 {
+  grid-area: nuestroSalonParrafo2;
+}
+
+.nuestroSalonFoto2 {
+  grid-area: nuestroSalonFoto2;
+}
+
+.salon2 {
+  height: 100%;
+  width: 400px;
+}
+
+.nuestroSalonFoto3 {
+  grid-area: nuestroSalonFoto3;
+}
+
+.salon3 {
+  height: 100%;
+  width: 400px;
+}
+
+.nuestroSalonParrafo3 {
+  grid-area: nuestroSalonParrafo3;
+}
+
+/*almacen*/
+.gridAlmacen {
+  background-color: #ffd8cc;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  grid-template-areas: 
+    "contenido1 contenido2"
+    "contenido3 contenido4"
+    "contenido5 contenido5";
+  align-content: space-evenly;
+  justify-content: space-evenly;
+  align-items: stretch;
+  justify-items: center;
+  font-family: 'Anton', sans-serif;
+  font-size: 18px;
+  text-indent: 8px;
+  text-shadow: 2px 3px 5px;
+  color: #0a1d37;
+  text-align: center;
+}
+.almacenFotos1 {
+  grid-area: contenido1;
+}
+.queso {
+  height: 20em;
+  width: 15em;
+
+}
+.almacenFotos2 {
+  grid-area: contenido2;
+}
+.panes {
+  height: 20em;
+  width: 15em;
+}
+.almacenFotos3 {
+  grid-area: contenido3;
+}
+.bebidas {
+  height: 20em;
+  width: 15em;
+}
+.almacenFotos4 {
+  grid-area: contenido4;
+}
+.especias {
+  height: 20em;
+  width: 15em;
+}
+.almacenFotos5 {
+  grid-area: contenido5;
+}
+.almacenFoto {
+  height: 25em;
+  width: 35em;
+}
+
+/* elaboracion */
+.gridElaboracion {
+  background-color: #ffd8cc;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  grid-template-areas: 
+   "contenido1 parrafo1"
+   "parrafo2 contenido2"
+   "contenido3 parrafo3";
+  justify-items: center;
+  align-items: stretch;
+  justify-content: space-evenly;
+  align-content: stretch;
+  font-family: 'Anton', sans-serif;
+  font-size: 18px;
+  text-indent: 10px;
+  text-shadow: 2px 3px 5px;
+  color: #0a1d37;
+}
+.elaboracionHorno {
+  grid-area: contenido1;
+}
+.forno {
+  height: 15em;
+  width: 15em;
+}
+.elaboracionHornoP {
+  grid-area: parrafo1;
+  text-align: center;
+  align-self: center;
+}
+.elaboracionPizza {
+  grid-area: contenido2;
+}
+.pizza {
+  height: 15em;
+  width: 15em;
+}
+.elaboracionPizzaP {
+  grid-area: parrafo2;
+  text-align: center;
+  align-self: center;
+}
+.elaboracionPasta {
+  grid-area: contenido3;
+}
+.pasta {
+  height: 15em;
+  width: 15em;
+}
+.elaboracionPastaP {
+  grid-area: parrafo3;
+  text-align: center;
+  align-self: center;
+}
+
+/* Contacto*/
+
+.formularioContacto {
+  background: #ffd8cc;
+  text-shadow: 2px 3px 5px;
+  font-size: 20px;
+  color: #0a1d37;
+  font-family: 'Anton', sans-serif;
+  text-align: center;
+}
+
+form {
+  display: grid;
+  padding: 1em;
+  background: #f9f9f9;
+  border: 1px solid #c1c1c1;
+  margin: 2rem auto 0 auto;
+  max-width: 600px;
+  padding: 1em;
+}
+form input {
+  background: #fff;
+  border: 1px solid #9c9c9c;
+}
+form button {
+  background: #d3d3d3;
+  padding: 0.7em;
+  width: 100%;
+  border: 0;
+}
+form button:hover {
+  background: #ffd700;
+}
+
+label {
+  padding: 0.5em 0.5em 0.5em 0;
+}
+
+input {
+  padding: 0.7em;
+  margin-bottom: 0.5rem;
+}
+input:focus {
+  outline: 3px solid #ffd700;
+}
+
+/********** media queries ***/
+
+
+@media screen and (min-width: 320px) {
+  
+  /**encabezado**/
+  header {
+    display: flex;
+    flex-wrap: wrap;
+    font-size: 10em;
+    padding: 1em;
+  }
+  .encabezadoBarraNav {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .paginas {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  /**************/
+  .mainIndex {
+    background-color:  #ffd8cc;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-template-areas:
+      "header" 
+      "parrafo"
+      "video"
+      "playlist";
+    font-family: 'Anton', sans-serif;
+    font-size: 10px;
+    text-indent: 8px;
+    text-shadow: 2px 3px 5px;
+    color: #0a1d37;
+    padding: 2em;
+  }
+  
+  .indexGridHeader {
+    grid-area: header;
+    align-self: center;
+    justify-self: center;
+  }
+  .indexGridParrafo {
+    grid-area: parrafo;
+  }
+  .indexGridVideo {
+    grid-area: video;
+  }
+  .videoPizza {
+    width: 8em;
+  }
+  .indexGridPlaylist {
+    grid-area: playlist;
+    justify-self: flex-end;
+    align-self: center;
+  }
+  /* sección carta*/
+  .gridCarta {
+    background-color: #ffd8cc;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr ;
+    grid-template-areas: "header header header"
+      "content1 content2" 
+      "content3 content3 content3";
+    font-family: 'Anton', sans-serif;
+    font-size: 12px;
+    text-indent: 10px;
+    text-shadow: 2px 3px 5px;
+    color: #0a1d37;
+    align-self: center;
+    justify-self: center;
+    justify-items: center;
+    justify-content: space-evenly;
+    align-content: space-evenly;
+    align-items: stretch;
+  }
+  .headerCarta {
+    grid-area: header;
+    text-align: justify;
+  }
+  .pizzas {
+    height: 15em;
+  }
+  .contenidoCartaPizza {
+    grid-area: content1;
+    
+  }
+  .contenidoCartaPasta {
+    grid-area: content2;
+  }
+  .pastas {
+    height: 15em;
+  }
+  .contenidoCartaVino {
+    grid-area: content3;
+    grid-row-start: 3;
+    grid-column-start: 1;
+    grid-column-end: 3;
+
+  }
+  .vinos {
+    height: 15em;
+    width: 19em;
+
+  }
+  /*****Nuestro Salon *****/
+  .gridSalon {
+    background-color: #ffd8cc;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-areas: 
+     "content1 parrafo1"
+     "content2 parrafo2"
+     "content3 parrafo3";
+     font-family: 'Anton', sans-serif;
+     font-size: 12px;
+     text-indent: 8px;
+     text-shadow: 2px 3px 5px;
+     color: #0a1d37;
+  }
+  .nuestroSalonFoto1 {
+    grid-area: content1;
+  }
+  .salon1 {
+    height: 10em;
+    width: 10em;
+  }
+  .nuestroSalonParrafo1 {
+    grid-area: parrafo1;
+    text-align: center;
+  }
+  .nuestroSalonFoto2 {
+    grid-area: content2;
+  }
+  .salon2 {
+    height: 10em;
+    width: 10em;
+  }
+  .nuestroSalonParrafo2 {
+    grid-area: parrafo2;
+    text-align: center;
+  }
+  .nuestroSalonFoto3 {
+    grid-area: content3;
+  }
+  .salon3 {
+    height: 10em;
+    width: 10em;
+  }
+  .nuestroSalonParrafo3 {
+    grid-area: parrafo3;
+    text-align: center;
+  }
+  .gridAlmacen {
+    background-color: #ffd8cc;
+    display: grid;
+    grid-template-columns: 1fr 1fr ;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-areas: 
+      "contenido1 contenido2"
+      "contenido3 contenido4"
+      "contenido5 contenido5";
+    align-content: space-evenly;
+    justify-content: space-evenly;
+    align-items: stretch;
+    justify-items: center;
+    font-family: 'Anton', sans-serif;
+    font-size: 18px;
+    text-indent: 8px;
+    text-shadow: 2px 3px 5px;
+    color: #0a1d37;
+    text-align: center;
+  }
+  .almacenFotos1 {
+    grid-area: contenido1;
+  }
+  .queso {
+    height: 8em;
+    width: 8em;
+  
+  }
+  .almacenFotos2 {
+    grid-area: contenido2;
+  }
+  .panes {
+    height: 8em;
+    width: 8em;
+  }
+  .almacenFotos3 {
+    grid-area: contenido3;
+  }
+  .bebidas {
+    height: 8em;
+    width: 8em;
+  }
+  .almacenFotos4 {
+    grid-area: contenido4;
+  }
+  .especias {
+    height: 8em;
+    width: 8em;
+  }
+  .almacenFotos5 {
+    grid-area: contenido5;
+  }
+  .almacenFoto {
+    height: 8em;
+    width: 16em;
+  }
+  /* elaboracion */
+  .gridElaboracion {
+    background-color: #ffd8cc;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-areas: 
+     "contenido1 parrafo1"
+     "parrafo2 contenido2"
+     "contenido3 parrafo3";
+    font-family: 'Anton', sans-serif;
+    font-size: 10px;
+    text-indent: 7px;
+    text-shadow: 2px 3px 5px;
+    color: #0a1d37;
+  }
+  .elaboracionHorno {
+    grid-area: contenido1;
+  }
+  .forno {
+    height: 10em;
+    width: 10em;
+  }
+  .elaboracionHornoP {
+    grid-area: parrafo1;
+
+  }
+  .elaboracionPizza {
+    grid-area: contenido2;
+  }
+  .pizza {
+    height: 10em;
+    width: 10em;
+  }
+  .elaboracionPizzaP {
+    grid-area: parrafo2;
+
+  }
+  .elaboracionPasta {
+    grid-area: contenido3;
+  }
+  .pasta {
+    height: 10em;
+    width: 10em;
+  }
+  .elaboracionPastaP {
+    grid-area: parrafo3;
+
+  }
+  /*****formulario**/
+  .contacto {
+    font-size: 10px;
+  }
+  #nombre {
+    font-size: 10px;
+  }
+  #email {
+    font-size: 10px;
+  }
+  #mensaje {
+    font-size: 10px;
+  }
+
+}
+@media screen and (max-width: 1400px) and (min-width: 480px) {
+  /**encabezado**/
+  header {
+    display: flex;
+    flex-wrap: wrap;
+    font-size: 10em;
+    padding: 1em;
+  }
+  .encabezadoBarraNav {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .paginas {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  /**************/
+
+  .mainIndex {
+    background: #ffd8cc;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr auto auto;
+    grid-template-areas:
+      'header' 
+      ' parrafo'
+      'video'
+      'playlist';
+    font-family: 'Anton', sans-serif;
+    font-size: 20px;
+    text-indent: 15px;
+    text-shadow: 2px 3px 5px;
+    color: #0a1d37;
+    padding: 2em;
+  }
+  
+  .indexGridHeader {
+    grid-area: header;
+    align-self: center;
+    justify-self: center;
+  }
+  .indexGridParrafo {
+    grid-area: parrafo;
+  }
+  .indexGridVideo {
+    grid-area: video;
+  
+  }
+  .videoPizza {
+    height: 19em;
+  }
+  .indexGridPlaylist {
+    grid-area: playlist;
+    justify-self: flex-end;
+    align-self: center;
+  }
+  .playlist {
+    height: 16em;
+  }
+  /*Salon*/
+
+.gridSalon{
+  display: grid;
+  grid-template-rows: 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr;
+  grid-template-areas:
+    "contenido1 parrafo1"
+    "parrafo2 contenido2"
+    "contenido3 parrafo3";
+  background: #ffd8cc;
+  font-family: 'Anton', sans-serif;
+  font-size: 20px;
+  text-indent: 15px;
+  text-shadow: 2px 3px 5px;
+  color: #0a1d37;
+}
+
+
+
+
+.nuestroSalonFoto1 {
+  grid-area: contenido1;
+}
+
+.salon1 {
+  height: 15em;
+  width: 15em;
+}
+
+.nuestroSalonParrafo1 {
+  grid-area: parrafo1;
+  text-align: center;
+}
+
+.nuestroSalonParrafo2 {
+  grid-area: parrafo2;
+  text-align: center;
+}
+
+.nuestroSalonFoto2 {
+  grid-area: contenido2;
+}
+
+.salon2 {
+  height: 15em;
+  width: 15em;
+}
+
+.nuestroSalonFoto3 {
+  grid-area: contenido3;
+  
+}
+
+.salon3 {
+  height: 15em;
+  width: 15em;
+}
+
+.nuestroSalonParrafo3 {
+  grid-area: parrafo3;
+  text-align: center;
+}
+  /* sección carta*/
+  .gridCarta {
+   background-color: #ffd8cc;
+   display: grid;
+   grid-template-columns: auto auto auto;
+   grid-template-rows: 1fr 1fr;
+   grid-template-areas: 
+   "header header header"
+   "content1 content2 content3";
+   font-family: 'Anton', sans-serif;
+   font-size: 15px;
+   text-indent: 15px;
+   text-shadow: 2px 3px 5px;
+   color: #0a1d37;
+   align-content: space-evenly;
+   justify-content: space-evenly;
+   align-items: center;
+   justify-items: center;
+
+  }
+  .headerCarta {
+    grid-area: header;
+  } 
+  .contenidoCartaPizza {
+    grid-area: content1;
+    grid-column-start: 1;
+  }
+  .pizzas {
+    height: 15em;
+  }
+  .contenidoCartaPasta {
+    grid-area: content2;
+    grid-column-start: 2;
+  }
+  .pastas {
+    height: 15em;
+  }
+  .contenidoCartaVino {
+    grid-area: content3;
+    grid-column-start: 3;
+  }
+  .vinos {
+    height: 15em;
+    width: 9rem;
+  }
+  /*almacen*/
+.gridAlmacen {
+  background-color: #ffd8cc;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  grid-template-areas: 
+    "contenido1 contenido2 contenido5"
+    "contenido3 contenido4 contenido5";
+  align-content: space-evenly;
+  justify-content: space-evenly;
+  align-items: stretch;
+  justify-items: center;
+  font-family: 'Anton', sans-serif;
+  font-size: 18px;
+  text-indent: 8px;
+  text-shadow: 2px 3px 5px;
+  color: #0a1d37;
+  text-align: center;
+}
+.almacenFotos1 {
+  grid-area: contenido1;
+}
+
+.almacenFotos2 {
+  grid-area: contenido2;
+}
+
+.almacenFotos3 {
+  grid-area: contenido3;
+}
+
+.almacenFotos4 {
+  grid-area: contenido4;
+}
+
+.almacenFotos5 {
+  grid-area: contenido5;
+}
+.almacenFoto {
+  grid-row-start: 1;
+  grid-row-end: 2;
+  grid-column-start: 3;
+  height: auto;
+}
+/* elaboracion */
+.gridElaboracion {
+  background-color: #ffd8cc;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  grid-template-areas: 
+   "contenido1 parrafo1"
+   "parrafo2 contenido2"
+   "contenido3 parrafo3";
+  justify-items: center;
+  align-items: stretch;
+  justify-content: space-evenly;
+  align-content: stretch;
+  font-family: 'Anton', sans-serif;
+  font-size: 18px;
+  text-indent: 10px;
+  text-shadow: 2px 3px 5px;
+  color: #0a1d37;
+}
+.elaboracionHorno {
+  grid-area: contenido1;
+}
+.forno {
+  height: 15em;
+  width: 15em;
+}
+.elaboracionHornoP {
+  grid-area: parrafo1;
+  text-align: center;
+  align-self: center;
+}
+.elaboracionPizza {
+  grid-area: contenido2;
+}
+.pizza {
+  height: 15em;
+  width: 15em;
+}
+.elaboracionPizzaP {
+  grid-area: parrafo2;
+  text-align: center;
+  align-self: center;
+}
+.elaboracionPasta {
+  grid-area: contenido3;
+}
+.pasta {
+  height: 15em;
+  width: 15em;
+}
+.elaboracionPastaP {
+  grid-area: parrafo3;
+  text-align: center;
+  align-self: center;
+}
+/*****formulario**/
+.contacto {
+  font-size: 20px;
+}
+#nombre {
+  font-size: 20px;
+}
+#email {
+  font-size: 20px;
+}
+#mensaje {
+  font-size: 20px;
+  text-align: center;
+  justify-self: center;
+}
+}
