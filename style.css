@@ -1,5 +1,10 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Anton&family=Caveat:wght@400;500;600;700&family=Mukta:wght@200;300;600&display=swap');
+@keyframes animate__fadeIn  {  
+}
+@keyframes animate__zoomIn {
+
+}
 * {
   margin: 0;
   padding: 0;
@@ -20,6 +25,7 @@
   justify-self: center;
   text-align: center;
   padding: 1em;
+  animation: fadeIn 2s ease 0s normal;
 }
 .logo-home {
   height: 120px;
@@ -84,6 +90,9 @@ footer {
   color: #0a1d37;
   padding: 2em;
 }
+.mainIndex h2 {
+  animation: zoomIn 2s ease 0s normal;
+}
 
 .indexGridHeader {
   grid-area: header;
@@ -131,14 +140,59 @@ footer {
 .contenidoCartaPizza {
   grid-area: content1;
 }
+.contenidoCartaPizza img:hover {
+  -webkit-transform:scale(1.25);
+  -moz-transform:scale(1.25);
+  -ms-transform:scale(1.25);
+  -o-transform:scale(1.25);
+  transform:scale(1.25);
+}
+.contenidoCartaPizza img {
+  transition: all;
+  -webkit-transition:all 1.9s ease;
+  -moz-transition:all 1.9s ease;
+  -o-transition:all 1.9s ease;
+  -ms-transition:all 1.9s ease;
+  width:100%;
+}
 .contenidoCartaPasta {
   grid-area: content2;
+}
+.contenidoCartaPasta img:hover {
+  -webkit-transform:scale(1.25);
+  -moz-transform:scale(1.25);
+  -ms-transform:scale(1.25);
+  -o-transform:scale(1.25);
+  transform:scale(1.25);
+}
+.contenidoCartaPasta img {
+  transition: all;
+  -webkit-transition:all 1.9s ease;
+  -moz-transition:all 1.9s ease;
+  -o-transition:all 1.9s ease;
+  -ms-transition:all 1.9s ease;
+  width:100%;
 }
 .pastas {
   height: 24em;
 }
 .contenidoCartaVino {
   grid-area: content3;
+}
+.contenidoCartaVino img:hover {
+  -webkit-transform:scale(1.25);
+  -moz-transform:scale(1.25);
+  -ms-transform:scale(1.25);
+  -o-transform:scale(1.25);
+  transform:scale(1.25);
+}
+.contenidoCartaVino img {
+  transition: all;
+  -webkit-transition:all 1.9s ease;
+  -moz-transition:all 1.9s ease;
+  -o-transition:all 1.9s ease;
+  -ms-transition:all 1.9s ease;
+  width:100%;
 }
 .vinos {
   height: 24em;
